@@ -24,6 +24,11 @@ html, body {
     margin: 0;
 }
 
+.top-title {
+    color: var(--bs-primary);
+    text-transform: capitalize;
+}
+
 .navbar-collapse {
     display: flex;
     justify-content: end;
@@ -136,11 +141,6 @@ header {
 
 }
 
-.header-wrapper p:first-of-type {
-    color: var(--bs-primary);
-    text-transform: capitalize;
-}
-
 .header-wrapper p:last-of-type {
     text-transform: capitalize;
     opacity:.8;
@@ -178,4 +178,21 @@ header {
 
 .roll-side-button:hover {
     color: var(--bs-white);
+}
+
+.container-2 {
+    margin-top: 10%;
+}
+
+.container-2 > .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-taste > h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: capitalize;
 }
