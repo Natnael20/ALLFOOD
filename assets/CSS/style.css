@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --bs-primary: #ff5600;
+    --bs-secondary: #212025;
+    --bs-third: #393a50;
+    --bs-fourth: #868c98;
+    --bs-white: #fff;
+}
+
