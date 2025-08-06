@@ -24,3 +24,21 @@ document.addEventListener("DOMContentLoaded", () => {
     // Auto-trigger the first button to show the first menu
     if (buttons.length) buttons[0].click();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    flatpickr(".date-picker", {
+        altInput: true,
+        altFormat: "F j, Y",
+        dateFormat: "Y-m-d",
+        minDate: "today",
+    });
+
+    flatpickr(".time-picker", {
+        enableTime: true,
+        noCalendar: true,
+        dateFormat: "H:i",
+        time_24hr: true,
+        minTime: "10:00",
+        maxTime: "22:00"
+    });
+});

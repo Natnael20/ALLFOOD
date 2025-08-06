@@ -365,3 +365,135 @@ header {
     font-family: "Josefin Sans", sans-serif;
 
 }
+
+.table-container {
+    margin-top: 10%;
+    background-image: url("https://preview.colorlib.com/theme/allfood/assets/img/gallery/section_bg04.png.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    height: 80vh;
+    text-align: center;
+}
+
+.book-form {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-wrapper {
+    background-color: var(--bs-white);
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.flatpickr-input {
+    background-color: white;
+    border: 1px solid var(--bs-gray-400);
+    border-radius: 6px;
+    width: auto;
+    font-size: 1rem;
+    outline: none;
+}
+
+.input-group {
+    position: relative;
+    flex: 1 1 500px;
+    min-width: 200px;
+}
+
+.book-button {
+    flex: 1 1 250px;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-button .btn:hover {
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
+    transition: all .5s ease-in-out;
+}
+
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: var(--bs-gray-600);
+    pointer-events: none;
+}
+
+.input-group input {
+    width: 10%;
+    border: 1px solid var(--bs-gray-400);
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.15);
+}
+
+.input-group {
+    position: relative;
+    flex: 1 1 250px;
+    min-width: 200px;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: var(--bs-gray-600);
+    pointer-events: none;
+    z-index: 10;
+    /* Ensure it's above the input */
+}
+
+.input-group input,
+.input-group .flatpickr-input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    background-color: 1px solid var(--bs-gray-400);
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    background-color: white;
+    position: relative;
+    z-index: 5;
+}
+
+@media (max-width: 768px) {
+    .book-wrapper {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .input-group,
+    .book-button {
+      width: 100%; /* full width for inputs and button on small screens */
+      flex: none; /* override flex-grow/shrink for consistent width */
+    }
+
+    .input-group input,
+.input-group .flatpickr-input {
+    width: auto;
+}
+  }
