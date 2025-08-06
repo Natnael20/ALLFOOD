@@ -349,3 +349,19 @@ header {
     background-color: var(--bs-primary);
     color: var(--bs-white);
 }
+
+.about-container {
+    margin-top: 5%;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content > div:nth-child(2) > h1 {
+    font-size: 3rem;
+    font-family: "Josefin Sans", sans-serif;
+
+}
