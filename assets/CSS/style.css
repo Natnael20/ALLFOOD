@@ -138,7 +138,6 @@ header {
     header {
         height: auto;
     }
-
 }
 
 .header-wrapper p:last-of-type {
@@ -195,4 +194,158 @@ header {
     font-weight: 700;
     font-size: 3rem;
     text-transform: capitalize;
+}
+.container-3 {
+    margin-top: 10%;
+}
+
+.menu-header h1 {
+    font-size: 3rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+}
+
+.meal-button {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meal-button div {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.meal-button div button {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    color: var(--bs-links);
+    border-radius: 5px;
+    padding: 10px 60px;
+    text-align: center;
+}
+
+.menus {
+    margin-top: 5%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.menus>div {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 2s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.menus>div.visible {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    z-index: 1;
+}
+
+
+.special-menu,
+.lunch-menu,
+.breakfast-menu,
+.dinner-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100vh;
+    gap: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.flex-menu,
+.grid-menu {
+    height: 100vh;
+    position: relative;
+}
+
+.flex-menu::before,
+.grid-menu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Semi-transparent overlay */
+}
+
+.flex-menu {
+    display: inline-flex;
+    width: 66.66%;
+}
+
+.flex-menu img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.grid-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 33.33%;
+}
+
+.grid-menu img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .menus {
+        height: auto;
+    }
+
+    .meal-button div {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .special-menu,
+    .lunch-menu,
+    .breakfast-menu,
+    .dinner-menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .flex-menu,
+    .grid-menu {
+        position: static;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .flex-menu img,
+    .grid-menu img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .flex-menu::before,
+    .grid-menu::before {
+        display: none;
+        /* Optional: hide overlay on mobile */
+    }
+}
+
+.meal-button button.active {
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
 }
