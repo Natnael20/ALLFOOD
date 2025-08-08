@@ -31,6 +31,7 @@ html, body {
 
 h1,h2,h3,h4,h5,h6 {
     font-family: "Josefin Sans", sans-serif;
+    text-transform: capitalize;
 }
 
 .navbar-collapse {
@@ -587,3 +588,88 @@ header {
     transition: all .7s ease-in-out;
   }
 
+  .footer-container {
+      margin-top: 5%;
+      background-image: url("https://preview.colorlib.com/theme/allfood/assets/img/gallery/section_bg02.png.webp");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 100vh;
+      padding: 40px 10px;
+  }
+
+  @media (max-width: 768px) {
+      .footer-container {
+          height: auto;
+      }
+  }
+
+  .footer-container>div>div {
+      display: flex;
+      justify-content: space-between;
+
+  }
+
+  .footer-links {
+      color: var(--bs-white);
+  }
+
+
+  .footer-links ul {
+      list-style: none;
+      padding: 0;
+  }
+
+  .footer-links ul li a {
+      display: inline-block;
+      /* Allows transform to work reliably */
+      color: var(--bs-white);
+      line-height: 3;
+      opacity: .5;
+      text-decoration: none;
+      transition: all 1s ease-in-out;
+      /* Move transition here for smooth revert */
+  }
+
+  .footer-links ul li a:hover {
+      color: var(--bs-primary);
+      opacity: 1;
+      transform: translateX(10px);
+  }
+
+
+  .footer-below {
+      margin-top: 5%;
+  }
+
+  .footer-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 5%;
+  }
+
+  .social-media {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      color: var(--bs-white);
+  }
+
+  .social-media a {
+      color: var(--bs-white);
+      text-decoration: none;
+  }
+
+  .social-media a i {
+      opacity: .5;
+  }
+
+  .social-media a:hover i {
+      opacity: 1;
+      transition: all .7s ease-in-out;
+
+  }
