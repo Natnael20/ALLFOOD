@@ -29,6 +29,10 @@ html, body {
     text-transform: capitalize;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Josefin Sans", sans-serif;
+}
+
 .navbar-collapse {
     display: flex;
     justify-content: end;
@@ -496,4 +500,60 @@ header {
 .input-group .flatpickr-input {
     width: auto;
 }
+  }
+
+  .subscription-container {
+    margin-top: 5%;
+    background: url("https://preview.colorlib.com/theme/allfood/assets/img/gallery/section_bg03.png.webp") left no-repeat;
+    background-size: 120%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sub-wrapper {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .sub-content {
+    margin-top: 8%;
+  }
+
+  .sub-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+
+  .subscribe-button .btn {
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
+    padding: 10px 20px;
+    border: none;
+  }
+
+  @media (max-width: 768px) {
+    .sub-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sub-content {
+        text-align: center;
+    }
+
+    .sub-input {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .subscribe-button .btn {
+        margin-right: 0;
+    }
   }
