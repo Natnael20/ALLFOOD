@@ -355,10 +355,6 @@ header {
     color: var(--bs-white);
 }
 
-.about-container {
-    margin-top: 5%;
-}
-
 .about-content {
     display: flex;
     justify-content: center;
@@ -502,9 +498,7 @@ header {
     width: auto;
 }
   }
-
   .subscription-container {
-    margin-top: 5%;
     background: url("https://preview.colorlib.com/theme/allfood/assets/img/gallery/section_bg03.png.webp") left no-repeat;
     background-size: 120%;
     height: 80vh;
